@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import ExpenseForm from './components/ExpenseForm';
+import ExpenseTable from './components/ExpenseTable';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 
       <div className="content-container">
         <ExpenseForm onAddExpense={addExpense} />
+        <ExpenseTable expenses={expenses} />
         
       </div>
     </div>
