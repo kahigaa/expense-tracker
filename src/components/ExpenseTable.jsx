@@ -1,5 +1,4 @@
 import React from 'react';
-import './ExpenseTable.css';
 
 const ExpenseTable = ({ expenses }) => {
   return (
@@ -20,7 +19,7 @@ const ExpenseTable = ({ expenses }) => {
               <tr key={index}>
                 <td>{expense.category}</td>
                 <td>{expense.description}</td>
-                <td>{expense.amount}</td> {/* No dollar sign here */}
+                <td>{expense.amount}</td>
                 <td>{new Date(expense.date).toLocaleDateString()}</td>
               </tr>
             ))}
