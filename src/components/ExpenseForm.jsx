@@ -13,7 +13,7 @@ const ExpenseForm = ({ onAddExpense }) => {
     setExpense({
       ...expense,
       [name]: value
-    });
+    }); 
   };
 
   const handleSubmit = (e) => {
